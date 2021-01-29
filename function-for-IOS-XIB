@@ -1,0 +1,9 @@
+    func callHomeController() {
+        let vc:HomeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        
+        if self.window == nil {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+        }
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+    }     
